@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrapz N Fryz — Wrapped with feelings | Kukatpally, Hyderabad</title>
+  <meta name="description" content="Wrapz N Fryz, Kukatpally, Hyderabad. Wraps, UFO wraps, double-fried fryz, thick shakes, mojitos and desserts. Good food, good mood.">
+  <meta name="theme-color" content="#F9F8F3">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Space+Mono:wght@400;700&family=Rubik:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style-2.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <img class="cursor-fry" id="cursorFry" src="images/clipart/fries-box.svg" alt="" aria-hidden="true">
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" aria-label="Wrapz N Fryz home">
+      <img class="nav__mono" src="images/brand/logo-monogram.svg" alt="" width="40" height="40">
+      <img class="nav__word" src="images/brand/logo-wordmark.svg" alt="Wrapz N Fryz">
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#receipt">Menu</a>
+      <a href="#fortune">Fortune fry</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="pill pill--blue" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO BENTO ============ -->
+    <section class="bento" id="slapZone">
+      <div class="tile tile--headline">
+        <p class="eyebrow">Est. near JNTU · Kukatpally, Hyderabad</p>
+        <h1>Wrapped<br>with <em>feelings.</em><br>Fried with <em class="red">ambition.</em></h1>
+        <p class="lead">Street food, made to order, with a suspicious amount of joy. Wraps, UFOs, double-fried fryz, thick shakes and mojitos.</p>
+        <div class="row">
+          <a class="pill pill--blue pill--lg" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Wraaaaap it up ↗</a>
+          <a class="pill pill--ghost pill--lg" href="#receipt">Read the menu</a>
+        </div>
+        <p class="hint">psst: click anywhere around here to slap a sticker →</p>
+      </div>
+
+      <figure class="tile tile--photo">
+        <img src="images/photos/wrap-hero.jpg" alt="Two Wrapz N Fryz chicken wraps in yellow 'wraaaap it up' sleeves">
+        <figcaption><span>fig. 1</span> Two wraps, mid-gossip.</figcaption>
+      </figure>
+
+      <div class="tile tile--clock">
+        <p class="mono">Current time</p>
+        <p class="clock" id="clock">--:--</p>
+        <p class="clock__verdict" id="clockVerdict">Calculating snack urgency…</p>
+      </div>
+
+      <div class="tile tile--sticker">
+        <img src="images/stickers/couple.svg" alt="Sticker: two friends sharing a wrap and fries">
+        <p>Share a wrap.<br><em>Or don't.</em> We get it.</p>
+      </div>
+
+      <a class="tile tile--cta" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">
+        <span>Order<br>now</span>
+        <img src="images/clipart/wrap-in-hand.svg" alt="">
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track" id="ribbon">
+        <span>good food</span><img src="images/clipart/star.svg" alt=""><span><em>good mood</em></span><img src="images/clipart/fries-box.svg" alt=""><span>wraaaaap it up</span><img src="images/clipart/dip-red.svg" alt=""><span><em>double fried</em></span><img src="images/clipart/cheese.svg" alt=""><span>napkins advised</span><img src="images/clipart/chilli.svg" alt="">
+        <span>good food</span><img src="images/clipart/star.svg" alt=""><span><em>good mood</em></span><img src="images/clipart/fries-box.svg" alt=""><span>wraaaaap it up</span><img src="images/clipart/dip-red.svg" alt=""><span><em>double fried</em></span><img src="images/clipart/cheese.svg" alt=""><span>napkins advised</span><img src="images/clipart/chilli.svg" alt="">
+      </div>
+    </div>
+
+    <!-- ============ MENU AS A RECEIPT ============ -->
+    <section class="sec receipt-sec" id="receipt">
+      <div class="sec__head">
+        <p class="eyebrow">Chapter 01</p>
+        <h2>The menu, <em>itemised</em> like a love letter.</h2>
+        <p class="lead">Tap anything to add it to your imaginary order. The receipt is honest. Brutally.</p>
+      </div>
+
+      <div class="receipt-layout">
+        <div class="menu-list">
+          <div class="tabs" role="tablist" aria-label="Menu sections">
+            <button class="tab is-on" data-cat="wraps">Wraps</button>
+            <button class="tab" data-cat="fryz">Fryz</button>
+            <button class="tab" data-cat="more">UFO &amp; sips</button>
+          </div>
+          <ul class="dishes" id="dishes"><!-- js --></ul>
+        </div>
+
+        <div class="receipt-wrap">
+          <article class="receipt" id="receipt-paper" aria-live="polite">
+            <header>
+              <img src="images/brand/logo-wordmark.svg" alt="Wrapz N Fryz">
+              <p>Shop 5A, Addagutta Society, Kukatpally<br>TABLE: your couch · SERVER: vibes</p>
+              <p id="receiptDate">--</p>
+            </header>
+            <div class="r-line r-dash"></div>
+            <ul class="r-items" id="rItems">
+              <li class="r-empty">Nothing yet. Your stomach is filing a complaint.</li>
+            </ul>
+            <div class="r-line r-dash"></div>
+            <ul class="r-totals">
+              <li><span>Napkins</span><span id="rNapkins">x0</span></li>
+              <li><span>Regret</span><span>0.00</span></li>
+              <li><span>Calories</span><span>don't ask</span></li>
+              <li class="r-big"><span>Happiness</span><span id="rHappy">0%</span></li>
+            </ul>
+            <div class="r-line r-dash"></div>
+            <p class="r-thanks">★ THANK YOU, COME AGAIN ★<br>(seriously, tomorrow?)</p>
+            <div class="barcode" aria-hidden="true"></div>
+          </article>
+          <div class="receipt-actions">
+            <button class="pill pill--ghost" id="rClear">Tear it up</button>
+            <a class="pill pill--red" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order for real ↗</a>
+          </div>
+          <p class="mono small">Prices live in the order app. This receipt only accepts feelings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORTUNE FRY ============ -->
+    <section class="sec fortune" id="fortune">
+      <div class="fortune__card">
+        <div class="fortune__text">
+          <p class="eyebrow eyebrow--light">Chapter 02</p>
+          <h2>The <em>Fortune Fry.</em></h2>
+          <p class="lead">Like a fortune cookie, but potato-based and more accurate. Tap the box. Receive wisdom.</p>
+          <p class="fortune__count mono" id="fortuneCount">Fortunes told today: 0</p>
+        </div>
+        <div class="fortune__stage">
+          <button class="fortune__box" id="fortuneBox" aria-label="Get a fortune">
+            <img src="images/clipart/fries-box.svg" alt="">
+          </button>
+          <div class="fortune__slip" id="fortuneSlip" role="status">
+            <span>Your fortune awaits.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HORIZONTAL STORY ============ -->
+    <section class="story" id="story">
+      <div class="story__sticky">
+        <div class="story__intro">
+          <p class="eyebrow">Chapter 03</p>
+          <h2>Goodness,<br><em>thoughtfully</em><br>wrapped.</h2>
+          <p class="mono small">(keep scrolling, it moves sideways ↓→)</p>
+        </div>
+        <div class="story__track" id="storyTrack">
+          <figure class="frame f1"><img src="images/photos/wrapped-pack.jpg" alt="Wraps in Wrapz N Fryz printed paper"><figcaption>Dressed for the occasion.</figcaption><img class="frame__stk" src="images/clipart/thumbs-up.svg" alt=""></figure>
+          <figure class="frame f2"><img src="images/photos/drink-cups.jpg" alt="Red and blue Wrapz N Fryz cups"><figcaption>Two cups, zero chill. (Actually, lots of chill.)</figcaption><img class="frame__stk" src="images/clipart/star.svg" alt=""></figure>
+          <figure class="frame f3"><img src="images/photos/storefront.jpg" alt="Wrapz N Fryz kiosk"><figcaption>Where the magic gets rolled.</figcaption><img class="frame__stk" src="images/clipart/thumbs-peace.svg" alt=""></figure>
+          <figure class="frame f4"><img src="images/photos/window-sign.jpg" alt="Wrapz N Fryz window sign"><figcaption>If you see this sign, you're close. Run.</figcaption><img class="frame__stk" src="images/clipart/ok-hand.svg" alt=""></figure>
+          <figure class="frame f5"><img src="images/photos/cap.jpg" alt="Wrapz N Fryz cap and apron"><figcaption>Uniform: blue. Mood: also blue (the good kind).</figcaption><img class="frame__stk" src="images/clipart/dip-yellow.svg" alt=""></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="sec quiz" id="quiz">
+      <div class="sec__head center">
+        <p class="eyebrow">Chapter 04</p>
+        <h2>Which <em>Wrapz N Fryz</em> are you?</h2>
+        <p class="lead">Three questions. Scientifically meaningless. Emotionally devastating.</p>
+      </div>
+      <div class="quiz__card" id="quizCard"><!-- js --></div>
+    </section>
+
+    <!-- ============ VISIT BENTO ============ -->
+    <section class="sec visit" id="visit">
+      <div class="visit__grid">
+        <div class="vtile vtile--addr">
+          <p class="eyebrow eyebrow--light">Chapter 05 · Come say hi</p>
+          <h2>We're the blue-and-yellow thing <em>near JNTU.</em></h2>
+          <address>Shop 5A, Plot 192, Addagutta Society,<br>Jal Vayu Vihar Road, near JNTU,<br>Kukatpally, Hyderabad, Telangana 500085</address>
+          <div class="row">
+            <a class="pill pill--yellow" href="https://www.google.com/maps/search/?api=1&query=17.4849,78.4138" target="_blank" rel="noopener">Directions ↗</a>
+            <a class="pill pill--light" href="tel:+919177599393">+91 91775 99393</a>
+          </div>
+        </div>
+        <div class="vtile vtile--map">
+          <iframe title="Wrapz N Fryz on the map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=17.4849,78.4138&z=16&output=embed"></iframe>
+        </div>
+        <a class="vtile vtile--insta" href="https://instagram.com/heywrappy" target="_blank" rel="noopener">
+          <img src="images/stickers/girl-badge.svg" alt="">
+          <span>@heywrappy<br><em>follow for food content you can't eat</em></span>
+        </a>
+        <a class="vtile vtile--fran" href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">
+          <span class="mono">Franchise</span>
+          <strong>Open one<br><em>near you</em> ↗</strong>
+          <img src="images/clipart/wraps-duo.svg" alt="">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <p class="foot__big"><em>good food,</em><br>good mood.</p>
+    <img class="foot__logo" src="images/brand/logo-wordmark.svg" alt="Wrapz N Fryz">
+    <div class="foot__row">
+      <span class="mono">© <span id="year">2026</span> Wrapz N Fryz · Street food, made to order</span>
+      <nav aria-label="Footer">
+        <a href="https://wrapznfryz.com/stores" target="_blank" rel="noopener">Stores</a>
+        <a href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise</a>
+        <a href="https://instagram.com/heywrappy" target="_blank" rel="noopener">Instagram</a>
+        <a href="index.html">Option 1 →</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main-2.js"></script>
+</body>
+</html>
