@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wrapz N Fryz — Wraps &amp; fryz in Kukatpally, Hyderabad</title>
   <meta name="description" content="Wrapz N Fryz, Kukatpally, Hyderabad. Fresh wraps grilled to order, hand-cut double-fried fryz, thick shakes, mojitos and desserts.">
-  <meta name="theme-color" content="#FFFFFF">
+  <meta name="theme-color" content="#0D5DBF">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style-5.css">
 </head>
 <body>
@@ -23,23 +23,23 @@
         <a href="#visit">Visit</a>
         <a href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise</a>
       </nav>
-      <a class="btn btn--primary nav__cta" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order online</a>
+      <a class="btn btn--red nav__cta" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order online</a>
       <button class="nav__toggle" id="toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- Hero -->
+    <!-- Hero (blue) -->
     <section class="hero">
       <div class="container hero__in">
         <div class="hero__text">
-          <p class="eyebrow">Kukatpally, Hyderabad</p>
-          <h1>Fresh wraps.<br>Crispy fryz.</h1>
-          <p class="lead">Wraps grilled to order with marinated fillings and fresh vegetables. Fryz hand-cut and fried twice. Simple food, done properly.</p>
-          <div class="hero__btns">
-            <a class="btn btn--primary btn--lg" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order online</a>
-            <a class="btn btn--plain btn--lg" href="#menu">View menu →</a>
+          <p class="tag tag--yellow">Kukatpally · Hyderabad</p>
+          <h1>Fresh wraps.<br><span>Crispy fryz.</span></h1>
+          <p class="lead">Wraps grilled to order with marinated fillings and fresh vegetables. Fryz hand-cut and fried twice. Good food, good mood.</p>
+          <div class="btns">
+            <a class="btn btn--yellow btn--lg" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order online</a>
+            <a class="btn btn--ghost-light btn--lg" href="#menu">View menu</a>
           </div>
         </div>
         <div class="hero__img">
@@ -48,23 +48,26 @@
       </div>
     </section>
 
-    <!-- Categories -->
+    <!-- Categories (yellow) -->
     <section class="cats">
       <div class="container cats__grid">
-        <a class="cat" href="#menu" data-jump="wraps"><img src="images/clipart/wrap-in-hand.svg" alt=""><span>Wraps</span></a>
-        <a class="cat" href="#menu" data-jump="fryz"><img src="images/clipart/fries-box.svg" alt=""><span>Fryz</span></a>
-        <a class="cat" href="#menu" data-jump="more"><img src="images/clipart/ufo.svg" alt=""><span>UFO</span></a>
-        <a class="cat" href="#menu" data-jump="more"><img src="images/clipart/shake.svg" alt=""><span>Shakes</span></a>
-        <a class="cat" href="#menu" data-jump="more"><img src="images/clipart/mojito.svg" alt=""><span>Mojitos</span></a>
-        <a class="cat" href="#menu" data-jump="more"><img src="images/clipart/dessert.svg" alt=""><span>Desserts</span></a>
+        <a class="cat" href="#menu" data-jump="wraps"><span class="cat__img"><img src="images/clipart/wrap-in-hand.svg" alt=""></span><span>Wraps</span></a>
+        <a class="cat" href="#menu" data-jump="fryz"><span class="cat__img"><img src="images/clipart/fries-box.svg" alt=""></span><span>Fryz</span></a>
+        <a class="cat" href="#menu" data-jump="more"><span class="cat__img"><img src="images/clipart/ufo.svg" alt=""></span><span>UFO</span></a>
+        <a class="cat" href="#menu" data-jump="more"><span class="cat__img"><img src="images/clipart/shake.svg" alt=""></span><span>Shakes</span></a>
+        <a class="cat" href="#menu" data-jump="more"><span class="cat__img"><img src="images/clipart/mojito.svg" alt=""></span><span>Mojitos</span></a>
+        <a class="cat" href="#menu" data-jump="more"><span class="cat__img"><img src="images/clipart/dessert.svg" alt=""></span><span>Desserts</span></a>
       </div>
     </section>
 
-    <!-- Menu -->
+    <!-- Menu (cream) -->
     <section class="section" id="menu">
       <div class="container">
         <div class="section__head">
-          <h2>Menu</h2>
+          <div>
+            <p class="tag tag--blue">Our menu</p>
+            <h2>Made to order.</h2>
+          </div>
           <div class="tabs" role="tablist" aria-label="Menu categories">
             <button class="tab is-active" data-cat="wraps" role="tab" aria-selected="true">Wraps</button>
             <button class="tab" data-cat="fryz" role="tab" aria-selected="false">Fryz</button>
@@ -76,33 +79,36 @@
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section section--soft" id="about">
-      <div class="container about">
+    <!-- About (red) -->
+    <section class="about" id="about">
+      <div class="container about__in">
         <div class="about__img"><img src="images/photos/wrapped-pack.jpg" alt="Wraps in Wrapz N Fryz printed paper" loading="lazy"></div>
         <div class="about__text">
-          <p class="eyebrow">About us</p>
-          <h2>Street food, made to order.</h2>
+          <p class="tag tag--cream">About us</p>
+          <h2>Goodness, thoughtfully wrapped.</h2>
           <p>Nothing sits waiting. Every wrap is grilled when you order it and rolled with fresh vegetables. Every portion of fryz is hand-cut and fried twice, so it stays crisp.</p>
           <ul class="points">
-            <li><strong>Grilled to order</strong><span>Marinated paneer, mushroom and chicken.</span></li>
-            <li><strong>Double-fried fryz</strong><span>Salted, plain or loaded with cheese.</span></li>
-            <li><strong>Drinks &amp; desserts</strong><span>Thick shakes, mojitos and something sweet.</span></li>
+            <li><b>01</b><div><strong>Grilled to order</strong><span>Marinated paneer, mushroom and chicken.</span></div></li>
+            <li><b>02</b><div><strong>Double-fried fryz</strong><span>Salted, plain or loaded with cheese.</span></div></li>
+            <li><b>03</b><div><strong>Drinks &amp; desserts</strong><span>Thick shakes, mojitos and something sweet.</span></div></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Visit -->
+    <!-- Visit (cream) -->
     <section class="section" id="visit">
       <div class="container visit">
         <div class="visit__text">
-          <p class="eyebrow">Visit</p>
+          <p class="tag tag--blue">Visit</p>
           <h2>Find us near JNTU.</h2>
           <address>Shop 5A, Plot 192, Addagutta Society,<br>Jal Vayu Vihar Road, near JNTU,<br>Kukatpally, Hyderabad, Telangana 500085</address>
-          <p class="contact"><a href="tel:+919177599393">+91 91775 99393</a><br><a href="https://instagram.com/heywrappy" target="_blank" rel="noopener">@heywrappy</a> on Instagram</p>
-          <div class="hero__btns">
-            <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&query=17.4849,78.4138" target="_blank" rel="noopener">Get directions</a>
+          <ul class="contact">
+            <li><span>Phone</span><a href="tel:+919177599393">+91 91775 99393</a></li>
+            <li><span>Instagram</span><a href="https://instagram.com/heywrappy" target="_blank" rel="noopener">@heywrappy</a></li>
+          </ul>
+          <div class="btns">
+            <a class="btn btn--blue" href="https://www.google.com/maps/search/?api=1&query=17.4849,78.4138" target="_blank" rel="noopener">Get directions</a>
             <a class="btn btn--outline" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order online</a>
           </div>
         </div>
@@ -112,23 +118,22 @@
       </div>
     </section>
 
-    <!-- Franchise -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="banner">
-          <div>
-            <h2>Open a Wrapz N Fryz.</h2>
-            <p>Franchise opportunities are available. We'd love to hear from you.</p>
-          </div>
-          <a class="btn btn--white btn--lg" href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise enquiries</a>
+    <!-- Franchise (yellow) -->
+    <section class="franchise">
+      <div class="container franchise__in">
+        <div>
+          <h2>Open a Wrapz N Fryz.</h2>
+          <p>Franchise opportunities are available. We'd love to hear from you.</p>
         </div>
+        <a class="btn btn--blue btn--lg" href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise enquiries</a>
       </div>
     </section>
   </main>
 
+  <!-- Footer (blue) -->
   <footer class="footer">
     <div class="container footer__in">
-      <img src="images/brand/logo-wordmark.svg" alt="Wrapz N Fryz">
+      <img src="images/brand/logo-wordmark-yellow.svg" alt="Wrapz N Fryz">
       <nav aria-label="Footer">
         <a href="#menu">Menu</a>
         <a href="https://wrapznfryz.com/stores" target="_blank" rel="noopener">Stores</a>

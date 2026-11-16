@@ -45,7 +45,7 @@
   function render(cat) {
     list.innerHTML = MENU[cat].map(([name, veg, desc, img], i) => `
       <li class="item" style="animation-delay:${i * 30}ms">
-        <span class="item__img"><img src="images/clipart/${img}" alt=""></span>
+        <span class="item__img ${["bg-blue","bg-yellow","bg-red"][i % 3]}"><img src="images/clipart/${img}" alt=""></span>
         <div>
           <h3>${name}${veg === null ? "" : ` <span class="${veg ? "veg" : "nonveg"}" title="${veg ? "Vegetarian" : "Non-vegetarian"}"></span>`}</h3>
           <p>${desc}</p>
