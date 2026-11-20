@@ -1,6 +1,6 @@
 # Wrapz N Fryz — website (brand edition)
 
-Five design options, same brand assets:
+Six design options, same brand assets:
 
 | Option | Page | Styles | Script | Feel |
 |---|---|---|---|---|
@@ -9,6 +9,7 @@ Five design options, same brand assets:
 | 3 | `index-3.html` | `css/style-3.css` | `js/main-3.js` | Corporate but funny: investor-report look, KPI dashboard, product catalogue table, hunger chart, team order planner, "leadership team", FAQ |
 | 4 | `index-4.html` | `css/style-4.css` | `js/main-4.js` | Food first: dark, modern & creative, no jokes. Scroll-driven hero, step-by-step craft, ingredients, menu with hover previews, parallax gallery |
 | 5 | `index-5.html` | `css/style-5.css` | `js/main-5.js` | Clean & simple: light, spacious, one font, brand blue accent, simple menu tabs |
+| 6 | `index-6.html` | `css/style-6.css` | `js/main-6.js` | Food & fun: brand colours, wavy sections, floating ingredients, "Find your wrap" picker, swipeable menu cards, tap-the-dips, perfect pairs |
 
 To make another option the homepage, rename `index.html` → `index-1.html` and the chosen file → `index.html`
 (then update the "Option" links in its footer).
