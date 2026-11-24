@@ -10,7 +10,7 @@ Seven design options, same brand assets:
 | 4 | `index-4.html` | `css/style-4.css` | `js/main-4.js` | Food first: dark, modern & creative, no jokes. Scroll-driven hero, step-by-step craft, ingredients, menu with hover previews, parallax gallery |
 | 5 | `index-5.html` | `css/style-5.css` | `js/main-5.js` | Clean & simple: light, spacious, one font, brand blue accent, simple menu tabs |
 | 6 | `index-6.html` | `css/style-6.css` | `js/main-6.js` | Food & fun: brand colours, wavy sections, floating ingredients, "Find your wrap" picker, swipeable menu cards, tap-the-dips, perfect pairs |
-| 7 | `index-7.html` | `css/style-7.css` | `js/main-7.js` | Copy of option 6, to be updated with the full menu and categories |
+| 7 | `index-7.html` | `css/style-7.css` | `js/main-7.js` | Option 6 layout with real food photos and the full menu & prices (edit `MENU` in `js/main-7.js`) |
 
 To make another option the homepage, rename `index.html` → `index-1.html` and the chosen file → `index.html`
 (then update the "Option" links in its footer).

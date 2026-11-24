@@ -257,7 +257,7 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
 .foot nav a { color: #fff; }
 .foot nav a:hover { color: var(--yellow); }
 .foot p { margin: 0; font-size: .9rem; }
-.opts { text-decoration: underline; text-underline-offset: 3px; }
+.foot__opts { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- FAB ---------- */
 .fab { display: none; position: fixed; right: 16px; bottom: 16px; z-index: 50; width: 64px; height: 64px; border-radius: 50%; background: var(--red); box-shadow: 0 8px 20px -6px rgba(0,0,0,.4); place-items: center; animation: bob 2.6s ease-in-out infinite; }
@@ -278,6 +278,54 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
 @keyframes plateIn { 0% { transform: scale(.3) rotate(-90deg); opacity: 0; } 100% { transform: none; opacity: 1; } }
 @keyframes dunk { 30% { transform: translateY(12px) scale(1.12, .9); } 60% { transform: translateY(-10px) scale(.95, 1.06); } }
 @keyframes wiggle { 0%, 100% { rotate: -6deg; } 50% { rotate: 6deg; } }
+
+/* ---------- Option 7: real photos & full menu ---------- */
+.hero__circle img { object-position: 55% 55%; }
+.pick__price { font: 700 1rem var(--display); color: var(--yellow); margin: -.2rem 0 .8rem !important; }
+.plate.has-photo { overflow: hidden; }
+.plate.has-photo img { width: 100%; height: 100%; object-fit: cover; }
+.menu__legend { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1rem 0 0; }
+.tagd { display: inline-block; font: 700 .7rem var(--body); text-transform: uppercase; letter-spacing: .06em; padding: .3em .65em; border-radius: 999px; background: #fff; }
+.tagd--veg, .tagd--paneer, .tagd--mushroom { color: #138A36; }
+.tagd--chicken { color: var(--red); }
+.tags { display: flex; flex-wrap: wrap; gap: .3rem; margin: .5rem 0 .6rem; }
+.card { flex-basis: 300px; display: flex; flex-direction: column; }
+.card__img { height: 190px; overflow: hidden; padding: 0; }
+.card__img.is-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
+.card__img.is-art { background: #1757A8 !important; border-radius: 18px; }
+.card__img.is-art img { width: 100%; height: 100%; object-fit: contain; }
+.card:hover .card__img.is-photo img { transform: scale(1.06); }
+.card:hover .card__img.is-art img { transform: scale(1.08) rotate(-3deg); }
+.card__sub { font: 700 .72rem var(--body); text-transform: uppercase; letter-spacing: .1em; margin: 0 0 .25rem; opacity: .7; }
+.card__row { display: flex; justify-content: space-between; align-items: flex-start; gap: .6rem; }
+.card__row h3 { font-size: 1.3rem; margin: 0; }
+.price { font: 800 1.15rem var(--display); white-space: nowrap; background: var(--ink); color: var(--yellow); padding: .15em .55em; border-radius: 999px; }
+.card--red .price { background: #fff; color: var(--red); }
+.card--red .card__sub { color: #fff; }
+.card--red .tagd--chicken { color: var(--red); }
+.flav { list-style: none; padding: 0; margin: .7rem 0 0; display: grid; gap: .3rem; font-size: .95rem; font-weight: 500; }
+.flav li { padding-left: 1.1rem; position: relative; }
+.flav li::before { content: ""; position: absolute; left: 0; top: .55em; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
+.card--red .flav li::before { background: var(--yellow); }
+.card--list { flex-basis: 320px; }
+.carousel__count { margin: 0 1rem 0 0; font-weight: 700; color: var(--yellow); }
+.fryz__art--photo { aspect-ratio: 1; }
+.fryz__photo { position: absolute; inset: 6%; width: 88%; height: 88%; object-fit: cover; border-radius: 50%; z-index: 2; border: 8px solid #fff; box-shadow: 0 24px 40px -20px rgba(20,13,3,.4); }
+.fryz__photo.swap { animation: plateIn .6s var(--bounce); }
+.fryz__dips { position: absolute; width: 46%; right: -6%; bottom: 0; z-index: 3; border-radius: 18px; border: 6px solid #fff; transform: rotate(6deg); box-shadow: 0 16px 30px -14px rgba(20,13,3,.45); }
+.fryz__price { position: absolute; left: 2%; top: 4%; z-index: 4; background: var(--red); color: #fff; font: 800 1rem var(--display); padding: .5em 1em; border-radius: 999px; transform: rotate(-6deg); box-shadow: 0 6px 0 #B5170F; }
+.fryz__types { margin-bottom: 1.6rem; }
+.ft { display: flex; align-items: center; gap: .55rem; background: #fff; padding: .35rem 1rem .35rem .35rem; border-radius: 999px; font-weight: 700; color: var(--ink); border: 2px solid transparent; cursor: pointer; transition: transform .3s var(--bounce), border-color .2s; }
+.ft img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.ft:hover { transform: translateY(-3px) rotate(-2deg); }
+.ft.is-on { border-color: var(--blue); }
+.pair__photos { display: flex; margin-bottom: 1.2rem; }
+.pair__photos img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 8px 14px -8px rgba(0,0,0,.4); transition: transform .4s var(--bounce); background: #1757A8; }
+.pair__photos img + img { margin-left: -18px; }
+.pair:hover .pair__photos img:first-child { transform: rotate(-10deg); }
+.pair:hover .pair__photos img:last-child { transform: rotate(10deg) translateX(6px); }
+.pair__price { display: inline-block; margin-top: .9rem; font: 800 .95rem var(--display); background: rgba(255,255,255,.9); color: var(--ink); padding: .3em .8em; border-radius: 999px; }
+.pair--cream .pair__price { background: var(--yellow); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
@@ -302,7 +350,9 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
   .picker__qs, .picker__result, .visit__card { padding: 1.6rem; }
   .plate { width: 140px; height: 140px; }
   .pairs__grid { grid-template-columns: 1fr; }
-  .card { flex-basis: 240px; }
+  .card, .card--list { flex-basis: 260px; }
+  .card__img { height: 160px; }
+  .fryz__price { font-size: .85rem; }
   .polaroids { height: 330px; }
   .visit__stk { width: 110px; }
   .franchise .btn { margin-left: 0; }
@@ -313,3 +363,9 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* option 7 fixes */
+
+.tabs { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { white-space: nowrap; flex: none; }
