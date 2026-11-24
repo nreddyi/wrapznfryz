@@ -57,9 +57,9 @@
       { n: "Peri Peri Chicken Sandwich", sub: "Sandwiches", p: 109, d: "c", img: "menu/sandwich.jpg", t: "Peri peri chicken in a grilled sandwich." }
     ],
     drinks: [
-      { n: "Mojitos", sub: "Mojitos", p: 109, img: "menu/mojito.jpg", list: ["Blue Heaven", "Pineapple Breeze", "Cool Mint Sparkle", "Virgin Mint Splash", "Blueberry Fizz", "Watermelon Breeze"] },
-      { n: "Fruity Milkshakes", sub: "Milkshakes", p: 79, img: "menu/shake-fruit.jpg", list: ["Butterscotch Banana", "Mango", "Strawberry", "Vanilla", "Kesar Pista"] },
-      { n: "Premium Milkshakes", sub: "Milkshakes", p: 99, img: "menu/shake-oreo.jpg", list: ["Oreo", "Black Current", "Hardrock Coffee", "Dryfruit", "Belgium Chocolate", "Kitkat", "Ferraro"] }
+      { n: "Mojitos", sub: "Mojitos", p: 109, img: "menu/drink-mojito.jpg", list: ["Blue Heaven", "Pineapple Breeze", "Cool Mint Sparkle", "Virgin Mint Splash", "Blueberry Fizz", "Watermelon Breeze"] },
+      { n: "Fruity Milkshakes", sub: "Milkshakes", p: 79, img: "menu/drink-shake-fruit.jpg", list: ["Butterscotch Banana", "Mango", "Strawberry", "Vanilla", "Kesar Pista"] },
+      { n: "Premium Milkshakes", sub: "Milkshakes", p: 99, img: "menu/drink-shake-oreo.jpg", list: ["Oreo", "Black Current", "Hardrock Coffee", "Dryfruit", "Belgium Chocolate", "Kitkat", "Ferraro"] }
     ],
     desserts: [
       { n: "Brownie Bowls", sub: "Bold Flavors", img: "menu/brownie-bowl.jpg", list: ["Double Chocolate Brownie Bowl · ₹109", "KitKat Brownie Bowl · ₹119", "Nutella Brownie Bowl · ₹129"] },
