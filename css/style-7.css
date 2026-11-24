@@ -373,7 +373,7 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
 /* hero: 3D product pictures around the real photo */
 .pf { filter: drop-shadow(0 14px 16px rgba(0,0,0,.35)); z-index: 2; }
 .pf1 { width: 22%; left: -7%; top: 6%; animation: bob 3.4s ease-in-out infinite; }
-.pf2 { width: 19%; left: -11%; top: 38%; animation: bob 3s ease-in-out infinite .6s; }
+.pf2 { width: 17%; left: -10%; top: 37%; animation: bob 3s ease-in-out infinite .6s; }
 .pf3 { width: 27%; left: -6%; bottom: 2%; animation: bob 3.8s ease-in-out infinite .3s; }
 .pf4 { width: 26%; left: 37%; bottom: -8%; animation: bob 3.2s ease-in-out infinite .9s; }
 .pf5 { width: 24%; left: 28%; top: -7%; animation: bob 3.6s ease-in-out infinite 1.2s; }
