@@ -380,3 +380,7 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
 .pf6 { width: 27%; right: -10%; bottom: 10%; animation: bob 3.4s ease-in-out infinite .4s; }
 .pf7 { width: 24%; right: -12%; top: 40%; animation: bob 3.1s ease-in-out infinite 1s; }
 @media (max-width: 600px) { .pf2 { left: -4%; } .pf1, .pf3 { left: -3%; } .pf6 { right: -4%; } .pf7 { right: -5%; } }
+
+/* ticker: real product pictures */
+.ticker__track img { width: auto; height: 64px; max-width: 110px; object-fit: contain; filter: drop-shadow(0 6px 8px rgba(20,13,3,.25)); }
+@media (max-width: 600px) { .ticker__track img { height: 48px; } }
