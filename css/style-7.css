@@ -384,3 +384,6 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
 /* ticker: real product pictures */
 .ticker__track img { width: auto; height: 64px; max-width: 110px; object-fit: contain; filter: drop-shadow(0 6px 8px rgba(20,13,3,.25)); }
 @media (max-width: 600px) { .ticker__track img { height: 48px; } }
+
+/* picker plate default: wrap + fries */
+.plate img[data-clip] { width: 82%; height: 82%; object-fit: contain; filter: drop-shadow(0 8px 10px rgba(20,13,3,.25)); }
