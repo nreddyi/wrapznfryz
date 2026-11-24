@@ -51,7 +51,7 @@
       { n: "Nashville Hot Chicken Fries", sub: "Loaded Fryz", p: 159, d: "c", img: "menu/fryz-loaded.jpg", t: "Fries topped with Nashville hot chicken." }
     ],
     bites: [
-      { n: "Popcorn", sub: "Quick Bites", p: 99, d: "vc", img: "menu/quick-bites.jpg", t: "Crunchy bite-sized popcorn, made for sharing." },
+      { n: "Popcorn", sub: "Quick Bites", p: 99, d: "vc", img: "food/popcorn.jpg", t: "Crunchy bite-sized popcorn, made for sharing." },
       { n: "Golden Nuggets", sub: "Quick Bites", p: 99, d: "pmc", img: "menu/quick-bites.jpg", t: "Golden, crumbed nuggets with dips." },
       { n: "Grill Sandwich", sub: "Sandwiches", p: 99, d: "pmc", img: "menu/sandwich.jpg", t: "Toasted on the grill, loaded with filling." },
       { n: "Peri Peri Chicken Sandwich", sub: "Sandwiches", p: 109, d: "c", img: "menu/sandwich.jpg", t: "Peri peri chicken in a grilled sandwich." }
