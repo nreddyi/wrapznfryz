@@ -387,3 +387,13 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); font-weight: 800; l
 
 /* picker plate default: wrap + fries */
 .plate img[data-clip] { width: 82%; height: 82%; object-fit: contain; filter: drop-shadow(0 8px 10px rgba(20,13,3,.25)); }
+
+/* franchise band: real category pictures */
+.franchise__foods { display: flex; align-items: center; gap: .4rem; }
+.franchise__foods img { height: 76px; width: 92px; object-fit: contain; filter: drop-shadow(0 8px 10px rgba(20,13,3,.25)); transition: transform .35s var(--bounce); }
+.franchise__foods img:nth-child(odd) { transform: rotate(-6deg); }
+.franchise__foods img:nth-child(even) { transform: rotate(6deg); }
+.franchise__foods img:hover { transform: rotate(0) translateY(-6px) scale(1.08); }
+@media (max-width: 600px) { .franchise__foods img { height: 56px; width: 68px; } }
+.franchise__in > div:not(.franchise__foods) { flex: 1 1 320px; }
+@media (min-width: 1001px) { .franchise__in { flex-wrap: nowrap; } .franchise .btn { margin-left: 0; } }
