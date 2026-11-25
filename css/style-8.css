@@ -180,3 +180,11 @@
 .about { background: #FDF1C6; }
 .about .hl::after { background: #fff; }
 .about__ph { background: #fff; }
+
+/* Home hero: WRAP IT. FRY IT. LOVE IT. */
+.hero__tag { display: flex; flex-wrap: wrap; gap: .5rem; margin: -.8rem 0 2rem; }
+.hero__tag + .btns, .hero__tag ~ .btns { margin-top: 0; }
+.ht { font: 800 clamp(1rem, 1.5vw, 1.2rem) var(--display); text-transform: uppercase; letter-spacing: .02em; padding: .45em 1em; border-radius: 999px; transition: transform .3s var(--bounce); }
+.ht:nth-child(odd) { transform: rotate(-3deg); } .ht:nth-child(even) { transform: rotate(3deg); }
+.ht:hover { transform: rotate(0) scale(1.08); }
+.ht--w { background: #fff; color: var(--blue); } .ht--r { background: var(--red); color: #fff; } .ht--y { background: var(--yellow); color: var(--ink); }
