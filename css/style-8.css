@@ -175,3 +175,8 @@
 .hero__sub { font: 800 clamp(1.15rem, 1.8vw, 1.4rem) var(--display); color: var(--yellow); margin: 1.4rem 0 0; }
 .hero__sub + .lead { margin-top: .8rem; }
 @media (max-width: 600px) { .hero h1.h1--long { font-size: 10vw; } }
+
+/* Home: give About its own colour so it separates from "Can't choose?" */
+.about { background: #FDF1C6; }
+.about .hl::after { background: #fff; }
+.about__ph { background: #fff; }
