@@ -168,3 +168,10 @@
 @media (max-width: 1000px) { .story__in { grid-template-columns: 1fr; gap: 40px; } .story__art { max-width: 420px; } .philo { padding: 110px 0 90px; } }
 @media (max-width: 600px) { .story__strip img { height: 60px; max-width: 80px; } }
 @media (max-width: 1160px) and (min-width: 1001px) { .nav__links { gap: 1.1rem; } .nav__links a { font-size: .92rem; } }
+
+/* Home hero: longer headline */
+.hero h1.h1--long { font-size: clamp(2.2rem, 5vw, 4.8rem); line-height: .92; text-transform: uppercase; }
+.hero h1.h1--long .w--2 { padding-left: 0; }
+.hero__sub { font: 800 clamp(1.15rem, 1.8vw, 1.4rem) var(--display); color: var(--yellow); margin: 1.4rem 0 0; }
+.hero__sub + .lead { margin-top: .8rem; }
+@media (max-width: 600px) { .hero h1.h1--long { font-size: 10vw; } }
