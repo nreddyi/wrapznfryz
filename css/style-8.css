@@ -111,3 +111,29 @@
 
 /* Home: link from the menu carousel to the full menu page */
 .menu__all-wrap { display: flex; justify-content: center; margin-top: 2rem; position: relative; z-index: 1; }
+
+/* Home: About the brand */
+.about { background: var(--cream); }
+.about__in { display: grid; grid-template-columns: 1fr 1.05fr; gap: 64px; align-items: center; }
+.about__art { position: relative; aspect-ratio: 1; max-width: 520px; width: 100%; justify-self: center; }
+.about__ph { position: absolute; margin: 0; background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 24px 40px -22px rgba(20,13,3,.45); transition: transform .4s var(--bounce); }
+.about__ph img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.about__ph--1 { width: 64%; height: 72%; left: 0; top: 0; transform: rotate(-5deg); }
+.about__ph--2 { width: 56%; height: 52%; right: 0; bottom: 0; transform: rotate(5deg); z-index: 2; }
+.about__ph:hover { transform: rotate(0) scale(1.03); z-index: 3; }
+.about__cut { position: absolute; z-index: 4; filter: drop-shadow(0 12px 14px rgba(20,13,3,.3)); animation: bob 3.4s ease-in-out infinite; }
+.about__cut--1 { width: 38%; right: -2%; top: 6%; }
+.about__cut--2 { width: 26%; left: 4%; bottom: 0; animation-delay: .8s; }
+.about__text h2 { font-size: clamp(2.4rem, 5vw, 4rem); text-transform: uppercase; line-height: .95; margin-bottom: 1.4rem; }
+.about__text p { font-size: 1.08rem; margin: 0 0 1rem; color: var(--text); }
+.about__lead { font-size: 1.22rem !important; color: var(--ink) !important; font-weight: 500; }
+.about__text strong { color: var(--red); }
+.about__tag { list-style: none; padding: 0; margin: 1.8rem 0 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.about__tag li { font: 800 1.15rem var(--display); padding: .55em 1.2em; border-radius: 999px; transition: transform .3s var(--bounce); }
+.about__tag li:nth-child(odd) { transform: rotate(-3deg); }
+.about__tag li:nth-child(even) { transform: rotate(3deg); }
+.about__tag li:hover { transform: rotate(0) scale(1.08); }
+.t-blue { background: var(--blue); color: #fff; }
+.t-red { background: var(--red); color: #fff; }
+.t-yellow { background: var(--yellow); color: var(--ink); }
+@media (max-width: 1000px) { .about__in { grid-template-columns: 1fr; gap: 40px; } .about__art { max-width: 420px; } }
