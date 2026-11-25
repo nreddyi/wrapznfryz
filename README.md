@@ -1,6 +1,6 @@
 # Wrapz N Fryz — website (brand edition)
 
-Seven design options, same brand assets:
+Eight design options, same brand assets:
 
 | Option | Page | Styles | Script | Feel |
 |---|---|---|---|---|
@@ -11,6 +11,7 @@ Seven design options, same brand assets:
 | 5 | `index-5.html` | `css/style-5.css` | `js/main-5.js` | Clean & simple: light, spacious, one font, brand blue accent, simple menu tabs |
 | 6 | `index-6.html` | `css/style-6.css` | `js/main-6.js` | Food & fun: brand colours, wavy sections, floating ingredients, "Find your wrap" picker, swipeable menu cards, tap-the-dips, perfect pairs |
 | 7 | `index-7.html` | `css/style-7.css` | `js/main-7.js` | Option 6 layout with real food photos and the full menu & prices (edit `MENU` in `js/main-7.js`) |
+| 8 | `option-8/` (index, menu, combos, our-place, stores) | `css/style-7.css` + `css/style-8.css` | `js/main-8.js` | Option 7 split into separate pages, plus a Stores page for JNTU, KPHB and Banjara Hills |
 
 To make another option the homepage, rename `index.html` → `index-1.html` and the chosen file → `index.html`
 (then update the "Option" links in its footer).

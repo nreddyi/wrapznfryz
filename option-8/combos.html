@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combos — Wrapz N Fryz</title>
+  <meta name="description" content="Wrapz N Fryz, Kukatpally, Hyderabad. Fresh wraps, loaded fryz, quick bites, grill sandwiches, mojitos, milkshakes, brownie bowls and ice creams.">
+  <meta name="theme-color" content="#0D5DBF">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style-7.css">
+  <link rel="stylesheet" href="../css/style-8.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a href="index.html" class="nav__logo" aria-label="Wrapz N Fryz home"><img src="../images/brand/logo-wordmark.svg" alt="Wrapz N Fryz"></a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="combos.html" class="is-active" aria-current="page">Combos</a>
+        <a href="our-place.html">Our place</a>
+        <a href="stores.html">Stores</a>
+        <a href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise</a>
+      </nav>
+      <a class="btn btn--red nav__cta" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order now</a>
+      <button class="nav__toggle" id="toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="phead">
+      <div class="wrap phead__in">
+        <p class="kicker kicker--light">Better together</p>
+        <h1>Perfect <span class="hl">pairs</span></h1>
+        <p class="phead__sub">Our favourite ways to build a meal. These are suggestions, not combo deals.</p>
+      </div>
+      <svg class="wave wave--down" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1350,20 1440,40 L1440,80 L0,80 Z"/></svg>
+    </section>
+    <!-- ============ PERFECT PAIRS ============ -->
+    <section class="sec pairs" id="pairs">
+      <div class="wrap">
+        
+        <div class="pairs__grid">
+          <article class="pair pair--blue">
+            <div class="pair__photos"><img src="../images/food/wrap-crispy-chicken.jpg" alt=""><img src="../images/food/fryz-salted.jpg" alt=""></div>
+            <h3>The classic</h3>
+            <p>Crispy Wrap + Salted Fries</p>
+            <span class="pair__price">₹109 + ₹99</span>
+          </article>
+          <article class="pair pair--red">
+            <div class="pair__photos"><img src="../images/food/wrap-paneer.jpg" alt=""><img src="../images/menu/mojito.jpg" alt=""></div>
+            <h3>Heat &amp; cool</h3>
+            <p>Chilli Wrap + any Mojito</p>
+            <span class="pair__price">₹109 + ₹109</span>
+          </article>
+          <article class="pair pair--yellow">
+            <div class="pair__photos"><img src="../images/food/fryz-korean.jpg" alt=""><img src="../images/menu/shake-oreo.jpg" alt=""></div>
+            <h3>Loaded &amp; shaken</h3>
+            <p>Korean Fries + Oreo Milkshake</p>
+            <span class="pair__price">₹159 + ₹99</span>
+          </article>
+          <article class="pair pair--cream">
+            <div class="pair__photos"><img src="../images/food/fryz-mac-cheese.jpg" alt=""><img src="../images/menu/brownie-bowl.jpg" alt=""></div>
+            <h3>Go all in</h3>
+            <p>Mac N Cheese Fries + Nutella Brownie Bowl</p>
+            <span class="pair__price">₹169 + ₹129</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FIND YOUR WRAP ============ -->
+    <section class="sec picker" id="picker">
+      <div class="wrap">
+        <div class="head head--center">
+          <p class="kicker">Can't choose?</p>
+          <h2>Find your <span class="hl">wrap</span></h2>
+          <p class="sub">Pick a filling and a mood. We'll match you with a wrap from our menu.</p>
+        </div>
+
+        <div class="picker__box">
+          <div class="picker__qs">
+            <div class="q">
+              <p class="q__label"><b>1</b> Choose your filling</p>
+              <div class="opts" data-q="base">
+                <button class="opt" data-v="veg"><img src="../images/clipart/lettuce.svg" alt=""> Veg</button>
+                <button class="opt" data-v="paneer"><img src="../images/clipart/cheese.svg" alt=""> Paneer</button>
+                <button class="opt" data-v="mushroom"><img src="../images/clipart/mushrooms.svg" alt=""> Mushroom</button>
+                <button class="opt" data-v="chicken"><img src="../images/clipart/wrap-bite-hand.svg" alt=""> Chicken</button>
+              </div>
+            </div>
+            <div class="q">
+              <p class="q__label"><b>2</b> Pick a mood</p>
+              <div class="opts" data-q="mood">
+                <button class="opt" data-v="crispy">Crispy</button>
+                <button class="opt" data-v="classic">Classic</button>
+                <button class="opt" data-v="cheesy">Cheesy</button>
+                <button class="opt" data-v="spicy">Spicy</button>
+                <button class="opt" data-v="hot">Nashville hot</button>
+                <button class="opt" data-v="sweet">Sweet &amp; sticky</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="picker__result" id="pickResult" aria-live="polite">
+            <div class="plate" id="plate">
+              <img id="pickImg" src="../images/cutouts/wrap-and-fryz.png" alt="A wrap and fries" data-clip="1">
+            </div>
+            <p class="kicker kicker--light" id="pickKicker">Your match</p>
+            <h3 id="pickName">Make your picks</h3>
+            <p class="pick__price" id="pickPrice"></p>
+            <p id="pickDesc">Choose a filling and a mood to see your wrap.</p>
+            <a class="btn btn--yellow" id="pickBtn" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener">Order this →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FRANCHISE ============ -->
+    <section class="franchise">
+      <div class="wrap franchise__in">
+        <div class="franchise__foods" aria-hidden="true">
+          <img src="../images/cutouts/wrap-classic.png" alt="">
+          <img src="../images/cutouts/fryz-loaded.png" alt="">
+          <img src="../images/cutouts/quick-bites.png" alt="">
+          <img src="../images/cutouts/brownie-bowl.png" alt="">
+        </div>
+        <div>
+          <h2>Want a Wrapz N Fryz near you?</h2>
+          <p>We're open to franchise partners. Let's roll.</p>
+        </div>
+        <a class="btn btn--blue btn--lg" href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise enquiries</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <svg class="wave wave--top wave--yellow" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C180,0 360,80 540,40 C720,0 900,80 1080,40 C1260,0 1350,60 1440,40 L1440,0 L0,0 Z"/></svg>
+    <div class="wrap foot__in">
+      <img class="foot__logo" src="../images/brand/logo-wordmark-yellow.svg" alt="Wrapz N Fryz">
+      <nav aria-label="Footer">
+        <a href="menu.html">Menu</a>
+        <a href="stores.html">Stores</a>
+        <a href="https://wrapznfryz.com/franchise" target="_blank" rel="noopener">Franchise</a>
+        <a href="https://instagram.com/heywrappy" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p>© <span id="year">2026</span> Wrapz N Fryz · Street food, made to order · <a class="foot__opts" href="../index-7.html">Other designs</a></p>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://order.wrapznfryz.com/home" target="_blank" rel="noopener" aria-label="Order now"><img src="../images/clipart/wrap-in-hand.svg" alt=""></a>
+
+  <script src="../js/main-8.js"></script>
+</body>
+</html>
