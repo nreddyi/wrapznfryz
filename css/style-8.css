@@ -59,3 +59,41 @@
   .teasers__grid, .stores__grid { grid-template-columns: 1fr; }
   .nav.open .nav__links a.is-active { color: var(--blue); }
 }
+
+/* Franchise page */
+.fr-why__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.fr-card { border-radius: var(--r); padding: 1.6rem; transition: transform .35s var(--bounce); }
+.fr-card:hover { transform: translateY(-8px) rotate(-1deg); }
+.fr-card img { height: 96px; width: auto; max-width: 80%; object-fit: contain; margin-bottom: 1rem; filter: drop-shadow(0 10px 12px rgba(20,13,3,.25)); }
+.fr-card h3 { font-size: 1.3rem; margin-bottom: .4rem; }
+.fr-card p { margin: 0; font-size: .97rem; }
+.fr-card--blue { background: var(--blue); color: rgba(255,255,255,.9); } .fr-card--blue h3 { color: #fff; }
+.fr-card--red { background: var(--red); color: rgba(255,255,255,.9); } .fr-card--red h3 { color: #fff; }
+.fr-card--yellow { background: var(--yellow); color: var(--ink); }
+.fr-card--cream { background: #fff; border: 2px solid var(--line); }
+.fr-form { background: #fff; }
+.fr-form__in { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: start; }
+.fr-contact h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; }
+.fr-contact__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.6rem; }
+.fr-contact__list li { display: flex; gap: 1rem; align-items: flex-start; }
+.fr-ico { width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; flex: none; }
+.fr-ico img { width: 34px; height: 34px; }
+.fr-ico--blue { background: #E2ECF9; } .fr-ico--red { background: #FDDCDA; } .fr-ico--yellow { background: #FDF1C6; }
+.fr-contact__list h3 { font-size: 1.2rem; margin-bottom: .2rem; }
+.fr-contact__list p { margin: 0 0 .3rem; color: var(--muted); }
+.fr-contact__list a { color: var(--blue); font-weight: 700; }
+.fr-contact__list address { font-style: normal; color: var(--ink); font-weight: 600; }
+.fr-formbox { background: var(--cream); border: 2px solid var(--line); border-radius: var(--r); padding: 2rem; display: grid; gap: 1rem; }
+.fr-formbox h3 { font-size: 1.6rem; }
+.fr-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.fr-formbox label { display: grid; gap: .35rem; font-weight: 600; color: var(--ink); font-size: .95rem; }
+.fr-formbox em { font-style: normal; color: var(--muted); font-weight: 500; }
+.fr-formbox input, .fr-formbox select, .fr-formbox textarea { font: 500 1rem var(--body); padding: .8em 1em; border-radius: 12px; border: 2px solid var(--line); background: #fff; color: var(--ink); transition: border-color .2s; width: 100%; }
+.fr-formbox input:focus, .fr-formbox select:focus, .fr-formbox textarea:focus { outline: none; border-color: var(--blue); }
+.fr-formbox .bad { border-color: var(--red); }
+.fr-formbox .btn { justify-self: start; }
+.fr-status { margin: 0; font-weight: 600; color: var(--blue); min-height: 1.2em; }
+.fr-fine { margin: 0; font-size: .85rem; color: var(--muted); }
+.fr-fine a { color: var(--blue); font-weight: 700; }
+@media (max-width: 1000px) { .fr-why__grid { grid-template-columns: 1fr 1fr; } .fr-form__in { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .fr-why__grid, .fr-row { grid-template-columns: 1fr; } .fr-formbox { padding: 1.4rem; } }
