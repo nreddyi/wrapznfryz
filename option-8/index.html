@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style-7.css?v=1795581317">
-  <link rel="stylesheet" href="../css/style-8.css?v=1795581578">
+  <link rel="stylesheet" href="../css/style-8.css?v=1795581828">
 </head>
 <body>
   <header class="nav" id="nav">
@@ -123,6 +123,38 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ============ MENU CAROUSEL ============ -->
+    <section class="sec menu" id="menu">
+      <svg class="wave wave--top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C180,0 360,80 540,40 C720,0 900,80 1080,40 C1260,0 1350,60 1440,40 L1440,0 L0,0 Z"/></svg>
+      <div class="wrap">
+        <div class="head head--row">
+          <div>
+            <p class="kicker kicker--light">The full menu</p>
+            <h2>Swipe. Drool. <span class="hl hl--red">Order.</span></h2>
+            <p class="menu__legend"><span class="tagd tagd--veg">Veg</span><span class="tagd tagd--paneer">Paneer</span><span class="tagd tagd--mushroom">Mushroom</span><span class="tagd tagd--chicken">Chicken</span></p>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab is-on" data-cat="wraps">Wraps</button>
+            <button class="tab" data-cat="fryz">Fryz</button>
+            <button class="tab" data-cat="bites">Bites &amp; sandwiches</button>
+            <button class="tab" data-cat="drinks">Mojitos &amp; shakes</button>
+            <button class="tab" data-cat="desserts">Desserts</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel__track" id="track"><!-- js --></div>
+      </div>
+      <div class="wrap carousel__nav">
+        <p class="carousel__count" id="count"></p>
+        <button class="arrow" id="prev" aria-label="Previous">←</button>
+        <div class="dots" id="dots"></div>
+        <button class="arrow" id="next" aria-label="Next">→</button>
+      </div>
+      <div class="wrap menu__all-wrap"><a class="btn btn--yellow btn--lg" href="menu.html">See full menu →</a></div>
+      <svg class="wave wave--down wave--cream" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1350,20 1440,40 L1440,80 L0,80 Z"/></svg>
     </section>
 
     <!-- ============ FRYZ & DIPS ============ -->
