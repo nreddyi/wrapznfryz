@@ -97,3 +97,14 @@
 .fr-fine a { color: var(--blue); font-weight: 700; }
 @media (max-width: 1000px) { .fr-why__grid { grid-template-columns: 1fr 1fr; } .fr-form__in { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .fr-why__grid, .fr-row { grid-template-columns: 1fr; } .fr-formbox { padding: 1.4rem; } }
+
+/* Menu page: grid of cards instead of a carousel */
+.menu--grid .carousel { overflow: visible; }
+.menu--grid .carousel__track { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; overflow: visible; max-width: 1200px; margin: 0 auto; padding: 1rem 24px 1rem; scroll-snap-type: none; cursor: default; }
+.menu--grid .card, .menu--grid .card--list { flex-basis: auto; transform: none; width: auto; }
+.menu--grid .card:nth-child(odd), .menu--grid .card:nth-child(even) { transform: none; }
+.menu--grid .card:hover { transform: translateY(-8px); }
+.menu--grid .carousel__nav .arrow, .menu--grid .carousel__nav .dots { display: none; }
+.menu--grid .carousel__nav { justify-content: center; margin-top: .6rem; }
+@media (max-width: 600px) { .menu--grid .carousel__track { grid-template-columns: 1fr 1fr; gap: 14px; padding: 1rem 16px; } .menu--grid .card { padding: .9rem; } .menu--grid .card__img { height: 120px; } .menu--grid .card__row h3 { font-size: 1.05rem; } .menu--grid .card p { font-size: .85rem; } .menu--grid .price { font-size: .95rem; } }
+@media (max-width: 380px) { .menu--grid .carousel__track { grid-template-columns: 1fr; } }
